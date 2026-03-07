@@ -24,7 +24,6 @@
   <!-- AOSPA -->
   <remote  name="aospa"
            fetch=".."
-           review="gerrit-ssh.aospa.co"
            revision="beryl"/>
 
   <remote  name="bitbucket"
@@ -51,5 +50,16 @@
   <include name="aosp.xml"/>
   <include name="aospa.xml"/>
   <include name="obsolete.xml"/>
+
+  <!-- AOSPA -->
+  <remote  name="aospam"
+           fetch="https://github.com/AOSPA-Mod"
+           revision="beryl"/>
+
+  <remote  name="los"
+           fetch="https://github.com/LineageOS"
+           revision="lineage-23.0"/>
+
+  <include name="mod.xml"/>
 
 </manifest>
