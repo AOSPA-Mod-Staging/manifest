@@ -2,9 +2,11 @@
 <manifest>
 
   <!-- Project Overrides -->
+  <remove-project path="device/qcom/common" />
   <remove-project path="device/qcom/sepolicy" />
   <remove-project path="external/ant-wireless/hidl" />
   <remove-project path="external/json-c" />
+  <remove-project path="vendor/qcom/common" />
   <remove-project path="vendor/qcom/opensource/dataservices" />
   <remove-project path="vendor/qcom/opensource/healthd-ext" />
   <remove-project path="vendor/qcom/opensource/interfaces" />
@@ -19,6 +21,9 @@
   <remove-project path="vendor/qcom/opensource/commonsys-intf/display" />
   <remove-project path="vendor/qcom/opensource/core-utils-sys" />
   <remove-project path="vendor/qcom/opensource/core-utils-vendor" />
+
+  <!-- AOSPA Mods -->
+  <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="aospam" />
 
   <!-- Legacy AOSP additions -->
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
@@ -51,7 +56,8 @@
   <project path="external/json-c" name="android_external_json-c" groups="qcom,qssi" remote="los" />
   <project path="hardware/qcom-caf/bootctrl" name="android_hardware_qcom_bootctrl" groups="qcom,pakala-vendor" revision="lineage-23.0-caf" remote="los" />
   <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" groups="qcom,legacy-qcom" revision="lineage-23.0-caf" remote="los" />
-  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" groups="qcom" remote="los" >
+  <project path="device/qcom/common" name="android_device_qcom_common" remote="aospam" >
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
     <!-- add guards for CAF repositories -->
