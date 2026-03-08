@@ -23,6 +23,7 @@
   <remove-project path="vendor/qcom/opensource/core-utils-vendor" />
 
   <!-- AOSPA Mods -->
+  <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="los" />
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="aospam" />
 
   <!-- Legacy AOSP additions -->
