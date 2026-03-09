@@ -2,7 +2,10 @@
 <manifest>
 
   <!-- Project Overrides -->
+  <remove-project path="build/make" />
+  <remove-project path="build/soong" />
   <remove-project path="device/qcom/common" />
+  <remove-project path="device/qcom/kernelscripts" />
   <remove-project path="device/qcom/sepolicy" />
   <remove-project path="external/ant-wireless/hidl" />
   <remove-project path="external/json-c" />
@@ -23,6 +26,18 @@
   <remove-project path="vendor/qcom/opensource/core-utils-vendor" />
 
   <!-- AOSPA Mods -->
+  <project path="build/make" name="android_build" remote="aospam" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="android_build_soong" remote="aospam" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
   <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="los" />
 
   <!-- Legacy AOSP additions -->
@@ -43,6 +58,14 @@
   <project path="hardware/qcom/sm7250/gps" name="android_hardware_qcom_sm7250_gps" groups="qcom,qcom_sm7250" remote="los" />
   <project path="hardware/qcom/sm8150/display" name="android_hardware_qcom_sm8150_display" groups="qcom,qcom_sm8150" remote="los" />
   <project path="hardware/qcom/sm8150/gps" name="android_hardware_qcom_sm8150_gps" groups="qcom,qcom_sm8150" remote="los" />
+
+  <!-- Inline kernel build -->
+  <project path="prebuilts/clang/kernel/linux-x86/clang-r416183b" name="LineageOS/android_prebuilts_clang_kernel_linux-x86_clang-r416183b" clone-depth="1" remote="github" revision="lineage-20.0" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" remote="github" revision="lineage-19.1" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" groups="pdk,linux,arm" clone-depth="1" remote="github" revision="lineage-19.1" />
+  <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="LineageOS/android_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" groups="pdk,linux,x86" clone-depth="1" remote="github" revision="lineage-19.1" />
+  <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" remote="aosp" revision="main-kernel-build-2024" />
+  <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" clone-depth="1" remote="los" />
 
   <!-- CodeLinaro additions -->
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" groups="qcom,qssi" remote="los" />
