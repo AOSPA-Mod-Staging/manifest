@@ -2,28 +2,32 @@
 <manifest>
 
   <!-- Project Overrides -->
-  <remove-project path="build/make" />
-  <remove-project path="build/soong" />
-  <remove-project path="device/qcom/common" />
-  <remove-project path="device/qcom/kernelscripts" />
-  <remove-project path="device/qcom/sepolicy" />
-  <remove-project path="external/ant-wireless/hidl" />
-  <remove-project path="external/json-c" />
-  <remove-project path="vendor/qcom/common" />
-  <remove-project path="vendor/qcom/opensource/dataservices" />
-  <remove-project path="vendor/qcom/opensource/healthd-ext" />
-  <remove-project path="vendor/qcom/opensource/interfaces" />
-  <remove-project path="vendor/qcom/opensource/power" />
-  <remove-project path="vendor/qcom/opensource/thermal-engine" />
-  <remove-project path="vendor/qcom/opensource/usb" />
-  <remove-project path="vendor/qcom/opensource/vibrator" />
-  <remove-project path="vendor/qcom/opensource/commonsys/audio" />
-  <remove-project path="vendor/qcom/opensource/commonsys/display" />
-  <remove-project path="vendor/qcom/opensource/commonsys/fm" />
-  <remove-project path="vendor/qcom/opensource/commonsys-intf/audio" />
-  <remove-project path="vendor/qcom/opensource/commonsys-intf/display" />
-  <remove-project path="vendor/qcom/opensource/core-utils-sys" />
-  <remove-project path="vendor/qcom/opensource/core-utils-vendor" />
+  <remove-project name="platform/vendor/qcom-opensource/cryptfs_hw" />
+  <remove-project name="AOSPA/android_vendor_aospa" />
+  <remove-project name="AOSPA/android_vendor_qcom_opensource_commonsys-intf_wfd" />
+  <remove-project name="platform/vendor/codeaurora/telephony" />
+  <remove-project name="AOSPA/android_build" />
+  <remove-project name="AOSPA/android_build_soong" />
+  <remove-project name="AOSPA/android_device_qcom_common" />
+  <remove-project name="AOSPA/android_kernel_build" />
+  <remove-project name="device/qcom/sepolicy" />
+  <remove-project name="platform/external/ant-wireless/hidl" />
+  <remove-project name="AOSPA/android_external_json-c" />
+  <remove-project name="proprietary_vendor_qcom_common" />
+  <remove-project name="AOSPA/android_vendor_qcom-opensource_dataservices" />
+  <remove-project name="platform/vendor/qcom-opensource/healthd-ext" />
+  <remove-project name="platform/vendor/qcom-opensource/interfaces" />
+  <remove-project name="AOSPA/android_vendor_qcom-opensource_power" />
+  <remove-project name="platform/vendor/qcom-opensource/thermal-engine" />
+  <remove-project name="AOSPA/android_vendor_qcom-opensource_usb" />
+  <remove-project name="AOSPA/android_vendor_qcom-opensource_vibrator" />
+  <remove-project name="platform/vendor/qcom-opensource/audio" />
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys" />
+  <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
+  <remove-project name="platform/vendor/qcom/opensource/commonsys-intf/audio" />
+  <remove-project name="AOSPA/android_vendor_qcom_opensource_commonsys-intf_display" />
+  <remove-project name="platform/vendor/qcom-opensource/core-utils-sys" />
+  <remove-project name="platform/vendor/qcom-opensource/core-utils-vendor" />
 
   <!-- AOSPA Mods -->
   <project path="build/make" name="android_build" remote="aospam" >
@@ -38,8 +42,14 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+  <project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="los" />
+  <project path="hardware/google/pixel" name="android_hardware_google_pixel" groups="generic_fs,pixel,pdk-gs-arm,pdk-gs-imgtec,pdk-desktop" remote="los" />
+  <project path="hardware/google/pixel-sepolicy" name="android_hardware_google_pixel-sepolicy" groups="generic_fs,pixel,pdk-desktop" remote="los" />
   <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="los" />
-
+  <project path="vendor/aospa" name="android_vendor_aospa" remote="aospam" >
+    <linkfile src="build.sh" dest="rom-build.sh" />
+  </project>
+  
   <!-- Legacy AOSP additions -->
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
   <project path="hardware/knowles/athletico/sound_trigger_hal" name="android_hardware_knowles_athletico_sound_trigger_hal" groups="coral" remote="los" />
@@ -79,7 +89,7 @@
   <project path="external/json-c" name="android_external_json-c" groups="qcom,qssi" remote="los" />
   <project path="hardware/qcom-caf/bootctrl" name="android_hardware_qcom_bootctrl" groups="qcom,pakala-vendor" revision="lineage-23.0-caf" remote="los" />
   <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" groups="qcom,legacy-qcom" revision="lineage-23.0-caf" remote="los" />
-  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" groups="qcom" remote="los" >
+  <project path="hardware/qcom-caf/common" name="AOSPA-Mod/android_hardware_qcom-caf_common" groups="qcom" remote="github" revision="lineage-23.0" >
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
     <!-- add guards for CAF repositories -->
