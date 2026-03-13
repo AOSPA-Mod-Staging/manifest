@@ -47,6 +47,9 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="los" />
+  <project path="device/qcom/common" name="android_device_qcom_common" remote="aospam" >
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+  </project>
   <project path="hardware/google/pixel" name="android_hardware_google_pixel" groups="generic_fs,pixel,pdk-gs-arm,pdk-gs-imgtec,pdk-desktop" remote="los" />
   <project path="hardware/google/pixel-sepolicy" name="android_hardware_google_pixel-sepolicy" groups="generic_fs,pixel,pdk-desktop" remote="los" />
   <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="los" />
@@ -64,6 +67,7 @@
     <linkfile dest="kernel/Android.mk" src="build/stop_scan.mk"/>
     <linkfile dest="disregard/Android.mk" src="build/stop_scan.mk"/>
   </project>
+  <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="aospam" />
   
   <!-- Legacy AOSP additions -->
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
