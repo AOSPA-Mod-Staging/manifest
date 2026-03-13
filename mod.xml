@@ -2,6 +2,7 @@
 <manifest>
 
   <!-- Project Overrides -->
+  <remove-project name="AOSPA/android_vendor_qcom_opensource_data-ipa-cfg-mgr" />
   <remove-project name="platform/vendor/qcom-opensource/core-utils" />
   <remove-project name="AOSPA/android_packages_apps_Settings" />
   <remove-project name="AOSPA/android_device_qcom_sepolicy_vndr" />
