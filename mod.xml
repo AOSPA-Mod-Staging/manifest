@@ -2,6 +2,7 @@
 <manifest>
 
   <!-- Project Overrides -->
+  <remove-project name="platform/external/dtc" />
   <remove-project name="AOSPA/android_vendor_qcom_opensource_data-ipa-cfg-mgr" />
   <remove-project name="AOSPA/android_packages_apps_Settings" />
   <remove-project name="AOSPA/android_device_qcom_sepolicy_vndr" />
@@ -83,6 +84,7 @@
   <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="LineageOS/android_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" groups="pdk,linux,x86" clone-depth="1" remote="github" revision="lineage-19.1" />
   <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" remote="aosp" revision="main-kernel-build-2024" />
   <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" clone-depth="1" remote="los" />
+  <project path="external/dtc" name="android_external_dtc" groups="pdk" remote="los" />
 
   <!-- CodeLinaro additions -->
   <project path="device/qcom/sepolicy" name="AOSPA-Mod/android_device_qcom_sepolicy" groups="qcom,qssi" remote="github" revision="lineage-23.0" />
