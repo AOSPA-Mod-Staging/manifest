@@ -9,7 +9,6 @@
   <remove-project name="AOSPA/android_packages_apps_Settings" />
   <remove-project name="AOSPA/android_device_qcom_sepolicy_vndr" />
   <remove-project name="AOSPA/android_hardware_qcom_thermal" />
-  <remove-project name="platform/hardware/qcom/bootctrl" />
   <remove-project name="platform/vendor/qcom-opensource/cryptfs_hw" />
   <remove-project name="AOSPA/android_vendor_aospa" />
   <remove-project name="AOSPA/android_vendor_qcom_opensource_commonsys-intf_wfd" />
@@ -110,7 +109,6 @@
   <project path="device/qcom/sepolicy_vndr/sm8750" name="AOSPA-Mod/android_device_qcom_sepolicy_vndr" groups="qcom,pakala-vendor" revision="lineage-23.0-caf-sm8750" remote="github" />
   <project path="external/ant-wireless/hidl" name="android_external_ant-wireless_hidl" groups="qcom,qssi" remote="los" />
   <project path="external/json-c" name="android_external_json-c" groups="qcom,qssi" remote="los" />
-  <project path="hardware/qcom-caf/bootctrl" name="android_hardware_qcom_bootctrl" groups="qcom,pakala-vendor" revision="lineage-23.0-caf" remote="los" />
   <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" groups="qcom,legacy-qcom" revision="lineage-23.0-caf" remote="los" />
   <project path="hardware/qcom-caf/common" name="AOSPA-Mod/android_hardware_qcom-caf_common" groups="qcom" remote="github" revision="lineage-23.0" >
     <!-- add guard for AOSP hardware/qcom dir -->
