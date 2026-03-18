@@ -2,6 +2,7 @@
 <manifest>
 
   <!-- Project Overrides -->
+  <remove-project name="platform/system/sepolicy" />
   <remove-project name="platform/external/dtc" />
   <remove-project name="AOSPA/android_vendor_qcom_opensource_data-ipa-cfg-mgr" />
   <remove-project name="platform/vendor/qcom-opensource/core-utils" />
@@ -69,7 +70,8 @@
     <linkfile dest="disregard/Android.mk" src="build/stop_scan.mk"/>
   </project>
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="aospam" />
-  
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="aospam" />
+
   <!-- Legacy AOSP additions -->
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
   <project path="hardware/knowles/athletico/sound_trigger_hal" name="android_hardware_knowles_athletico_sound_trigger_hal" groups="coral" remote="los" />
