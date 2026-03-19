@@ -40,14 +40,11 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="los" />
-  <project path="device/qcom/common" name="android_device_qcom_common" remote="aospam" >
-    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
-  </project>
   <project path="hardware/google/pixel" name="android_hardware_google_pixel" groups="generic_fs,pixel,pdk-gs-arm,pdk-gs-imgtec,pdk-desktop" remote="los" />
   <project path="hardware/google/pixel-sepolicy" name="android_hardware_google_pixel-sepolicy" groups="generic_fs,pixel,pdk-desktop" remote="los" />
   <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="los" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="aospam" />
-  <project path="vendor/aospa" name="android_vendor_aospa" remote="aospam" >
+  <project path="vendor/aospa" name="AOSPA-Mod/android_vendor_aospa" remote="github" revsion"mod" >
     <linkfile src="build.sh" dest="rom-build.sh" />
   </project>
   <project path="vendor/qcom/opensource/core-utils" name="android_vendor_qcom-opensource_core-utils" remote="aospam" >
@@ -100,7 +97,9 @@
   <project path="device/qcom/sepolicy_vndr/sm8650" name="AOSPA-Mod/android_device_qcom_sepolicy_vndr" groups="qcom,lanai-vendor" revision="lineage-23.0-caf-sm8650" remote="github" />
   <project path="device/qcom/sepolicy_vndr/sm8750" name="AOSPA-Mod/android_device_qcom_sepolicy_vndr" groups="qcom,pakala-vendor" revision="lineage-23.0-caf-sm8750" remote="github" />
   <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" groups="qcom,legacy-qcom" revision="lineage-23.0-caf" remote="los" />
-  <project path="hardware/qcom-caf/common" name="AOSPA-Mod/android_hardware_qcom-caf_common" groups="qcom" remote="github" revision="lineage-23.0" >
+  <project path="hardware/qcom-caf/common" name="AOSPA-Mod/android_hardware_qcom-caf_common" groups="qcom" remote="github" revision="mod" />
+  <project path="device/qcom/common" name="AOSPA-Mod/android_device_qcom_common" remote="github" revision="mod" >
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
     <!-- add guards for CAF repositories -->

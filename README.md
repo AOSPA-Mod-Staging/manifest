@@ -2,7 +2,7 @@
 
 ### Initialize Paranoid Android Mod ###
 ```
-repo init -u https://github.com/AOSPA-Mod/manifest -b beryl --depth 1
+repo init -u https://github.com/AOSPA-Mod/manifest -b mod --depth 1
 ```
 
 ### Sync Sauce ###
