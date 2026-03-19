@@ -44,7 +44,7 @@
   <project path="hardware/google/pixel-sepolicy" name="android_hardware_google_pixel-sepolicy" groups="generic_fs,pixel,pdk-desktop" remote="los" />
   <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="los" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="aospam" />
-  <project path="vendor/aospa" name="AOSPA-Mod/android_vendor_aospa" remote="github" revsion"mod" >
+  <project path="vendor/aospa" name="AOSPA-Mod/android_vendor_aospa" remote="github" revision"mod" >
     <linkfile src="build.sh" dest="rom-build.sh" />
   </project>
   <project path="vendor/qcom/opensource/core-utils" name="android_vendor_qcom-opensource_core-utils" remote="aospam" >
