@@ -88,8 +88,6 @@
   <project path="device/qcom/sepolicy_vndr/sm8750" name="AOSPA-Mod/android_device_qcom_sepolicy_vndr" groups="qcom,pakala-vendor" revision="lineage-23.0-caf-sm8750" remote="github" />
   <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" groups="qcom,legacy-qcom" revision="lineage-23.0-caf" remote="los" />
   <project path="hardware/qcom-caf/common" name="AOSPA-Mod/android_hardware_qcom-caf_common" groups="qcom" remote="github" revision="lineage-23.0" >
-    <!-- add guard for AOSP hardware/qcom dir -->
-    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
     <!-- add guards for CAF repositories -->
     <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8953/Android.bp" />
