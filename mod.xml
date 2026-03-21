@@ -12,6 +12,7 @@
   <remove-project name="AOSPA/android_build" />
   <remove-project name="AOSPA/android_build_soong" />
   <remove-project name="AOSPA/android_device_qcom_common" />
+  <remove-project name="AOSPA/android_hardware_lineage_compat" />
   <remove-project name="AOSPA/android_kernel_build" />
   <remove-project name="device/qcom/sepolicy" />
   <remove-project name="proprietary_vendor_qcom_common" />
@@ -49,6 +50,7 @@
   </project>
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="aospam" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="aospam" />
+  <project path="hardware/lineage/compat" name="android_hardware_lineage_compat" remote="aospam" />
 
   <!-- Inline kernel build -->
   <project path="prebuilts/clang/kernel/linux-x86/clang-r416183b" name="LineageOS/android_prebuilts_clang_kernel_linux-x86_clang-r416183b" clone-depth="1" remote="github" revision="lineage-20.0" />
