@@ -49,7 +49,26 @@
            fetch="https://gitlab.com" />
 
   <include name="aosp.xml"/>
-  <include name="aospa.xml"/>
   <include name="obsolete.xml"/>
+
+  <!-- Nexus -->
+  <remote  name="aospam"
+           fetch="https://github.com/AOSPA-Mod"
+           revision="beryl"/>
+
+  <remote  name="nexus"
+           fetch="https://github.com/AOSPA-Mod"
+           revision="staging"/>
+
+  <remote  name="los"
+           fetch="https://github.com/LineageOS"
+           revision="lineage-23.0"/>
+
+  <remote  name="losf"
+           fetch="https://github.com/AOSPA-Mod"
+           revision="lineage-23.0"/>
+
+  <include name="nexus.xml"/>
+  <include name="lineage.xml"/>
 
 </manifest>
