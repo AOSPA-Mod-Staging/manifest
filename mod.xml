@@ -3,7 +3,6 @@
 
   <!-- Project Overrides -->
   <remove-project name="platform/hardware/qcom/bootctrl" />
-  <remove-project name="AOSPA/android_hardware_qcom_wlan" />
   <remove-project name="AOSPA/android_external_tinycompress" />
   <remove-project name="AOSPA/android_bootable_recovery" />
   <remove-project name="platform/system/sepolicy" />
@@ -52,7 +51,6 @@
   <project path="hardware/google/pixel-sepolicy" name="android_hardware_google_pixel-sepolicy" groups="generic_fs,pixel,pdk-desktop" remote="los" />
   <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="los" />
   <project path="hardware/qcom/bootctrl" name="AOSPA-Mod/android_hardware_qcom_bootctrl" groups="qcom,pakala-vendor" revision="lineage-23.0-caf" remote="github" />
-  <project path="hardware/qcom/wlan" name="AOSPA-Mod/android_hardware_qcom_wlan" groups="qcom,pakala-wlan" revision="lineage-23.0-caf" remote="github" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="aospam" />
   <project path="vendor/aospa" name="android_vendor_aospa" remote="aospam" >
     <linkfile src="build.sh" dest="rom-build.sh" />
