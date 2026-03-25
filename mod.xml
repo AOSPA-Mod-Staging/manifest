@@ -2,7 +2,7 @@
 <manifest>
 
   <!-- Project Overrides -->
-  <remove-project name="AOSPA-Mod/android_packages_apps_Launcher3" />
+  <remove-project name="AOSPA/android_packages_apps_Launcher3" />
   <remove-project name="platform/hardware/qcom/bootctrl" />
   <remove-project name="AOSPA/android_external_tinycompress" />
   <remove-project name="AOSPA/android_bootable_recovery" />
