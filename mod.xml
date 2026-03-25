@@ -2,6 +2,7 @@
 <manifest>
 
   <!-- Project Overrides -->
+  <remove-project name="AOSPA-Mod/android_packages_apps_Launcher3" />
   <remove-project name="platform/hardware/qcom/bootctrl" />
   <remove-project name="AOSPA/android_external_tinycompress" />
   <remove-project name="AOSPA/android_bootable_recovery" />
@@ -55,6 +56,7 @@
   <project path="vendor/aospa" name="vendor_aospa" remote="aospam" >
     <linkfile src="build.sh" dest="rom-build.sh" />
   </project>
+  <project path="packages/apps/Launcher3" name="AOSPA-Mod/android_packages_apps_Launcher3" remote="github" revision="staging" />
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="aospam" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="aospam" />
   <project path="hardware/lineage/compat" name="android_hardware_lineage_compat" remote="aospam" />
