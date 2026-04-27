@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- AOSP -->
+  <remote name="aosp"
+          fetch="https://android.googlesource.com"
+          sync-c="true"
+          sync-tags="false"
+          review="https://android-review.googlesource.com/"
+          revision="refs/tags/android-16.0.0_r1" />
+
+  <!-- CLO -->
+  <remote name="clo-la"
+          fetch="https://git.codelinaro.org/clo/la"
+          sync-c="true"
+          sync-tags="false" />
+
+  <default remote="clo-la"/>
+
+  <!-- Extras -->
+  <remote  name="aospa"
+           fetch="https://github.com/AOSPA"
+           revision="beryl"/>
+
+  <remote  name="aospa-blobs"
+           fetch="https://github.com/ThankYouMario"
+           revision="beryl" />
+
+  <remote  name="los"
+           fetch="https://github.com/LineageOS"
+           revision="lineage-23.0" />
+
+  <!-- Flare -->
+  <remote  name="flare"
+           fetch="https://github.com/AOSPA-Mod"
+           revision="16.0"/>
+
+  <include name="system.xml"/>
+  <include name="vendor.xml"/>
+  <include name="obsolete.xml"/>
+  <include name="override.xml"/>
+  <include name="extras.xml"/>
+  <include name="flare.xml"/>
+
+</manifest>

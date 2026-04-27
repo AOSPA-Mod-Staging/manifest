@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Override -->
+  <remove-project name="android_bionic" />
+  <remove-project name="android_bootable_recovery" />
+
+  <remove-project name="android_build" />
+  <remove-project name="android_build_soong" />
+
+  <remove-project name="android_external_arm-optimized-routines" />
+  <remove-project name="android_external_e2fsprogs" />
+  <remove-project name="android_external_dng_sdk" />
+  <remove-project name="android_external_fastrpc" />
+  <remove-project name="android_external_jemalloc-new" />
+  <remove-project name="android_external_json-c" />
+  <remove-project name="android_external_mksh" />
+  <remove-project name="android_external_zstd" />
+
+  <remove-project name="android_frameworks_av" />
+  <remove-project name="android_frameworks_base" />
+  <remove-project name="android_frameworks_native" />
+
+  <remove-project name="android_packages_apps_Settings" />
+  <remove-project name="android_packages_apps_SettingsIntelligence" />
+  <remove-project name="android_packages_modules_Bluetooth" />
+  <remove-project name="android_packages_modules_Connectivity" />
+  <remove-project name="android_packages_modules_Nfc" />
+  <remove-project name="android_packages_modules_Wifi" />
+  <remove-project name="android_packages_services_DeviceAsWebcam" />
+  <remove-project name="android_packages_services_Telecomm" />
+  <remove-project name="android_packages_services_Telephony" />
+
+  <remove-project name="android_kernel_configs" />
+
+  <remove-project name="android_system_core" />
+  <remove-project name="android_system_libhidl" />
+  <remove-project name="android_system_memory_lmkd" />
+  <remove-project name="android_system_memory_libmeminfo" />
+  <remove-project name="android_system_update_engine" />
+
+</manifest>
