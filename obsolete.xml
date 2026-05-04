@@ -49,5 +49,6 @@
   <remove-project name="platform/packages/apps/SnapdragonMusic" />
   <remove-project name="platform/vendor/codeaurora/packages/apps/Dialer" />
   <remove-project name="platform/vendor/codeaurora/packages/apps/SoundRecorder" />
+  <remove-project name="platform/vendor/qcom-opensource/crosvm-gunyah" />
 
 </manifest>
