@@ -48,5 +48,6 @@
   <include name="octavi.xml"/>
   <include name="lineage.xml"/>
   <include name="aospa.xml"/>
+  <include name="aosp.xml"/>
 
 </manifest>
