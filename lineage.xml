@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Bootable -->
+  <project path="bootable/deprecated-ota" name="android_bootable_deprecated-ota" remote="los" />
+
+  <!-- Device -->
+  <project path="device/lineage/sepolicy" name="android_device_lineage_sepolicy" remote="los" />
+
+  <!-- External -->
+  <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="los" />
+  <project path="external/unrar" name="android_external_unrar" remote="los" />
+
+  <!-- Hardware -->
+  <project path="hardware/google/pixel" name="android_hardware_google_pixel" remote="los" />
+  <project path="hardware/google/pixel-sepolicy" name="android_hardware_google_pixel-sepolicy" remote="los" />
+  <project path="hardware/lineage/compat" name="android_hardware_lineage_compat" remote="octavi" revision="lineage-23.0" />
+  <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="los" />
+
+  <!-- Misc -->
+  <project path="lineage-sdk" name="android_lineage-sdk" remote="octavi" revision="lineage-23.0" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Aperture" name="android_packages_apps_Aperture" remote="los" />
+  <project path="packages/apps/EuiccPolicy" name="android_packages_apps_EuiccPolicy" remote="los" />
+  <project path="packages/apps/LineageParts" name="android_packages_apps_LineageParts" remote="octavi" revision="lineage-23.0" />
+  <project path="packages/apps/Updater" name="android_packages_apps_Updater" remote="octavi" revision="lineage-23.0" />
+  <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="octavi" revision="lineage-23.0" />
+
+  <!-- Prebuilts -->
+  <project path="prebuilts/extract-tools" name="android_prebuilts_extract-tools" remote="los" />
+
+  <!-- Tools -->
+  <project path="tools/extract-utils" name="android_tools_extract-utils" remote="los" />
+
+  <!-- Vendor -->
+  <project path="vendor/apn" name="android_vendor_apn" remote="los" revision="main" />
+  <project path="vendor/crowdin" name="android_vendor_crowdin" remote="los" />
+
+</manifest>
