@@ -83,6 +83,7 @@
   <project path="system/update_engine" name="android_system_update_engine" remote="octavi" />
 
   <!-- Vendor -->
+  <project path="vendor/addons" name="android_vendor_addons" remote="octavi" />
   <project path="vendor/octavi" name="android_vendor_octavi" remote="octavi" />
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="octavi" />
 
