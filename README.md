@@ -4,12 +4,12 @@
 
 **Initialize full repository (useful for developers)**
 ```
-repo init -u https://github.com/OSS-Random/android_manifest -b sixteen
+repo init -u https://github.com/OSS-Random/android_manifest -b sixteen --git-lfs
 ```
 
 **If you want to save space, use this instead**
 ```
-repo init -u https://github.com/OSS-Random/android_manifest -b sixteen --depth 1
+repo init -u https://github.com/OSS-Random/android_manifest -b sixteen --git-lfs --depth 1
 ```
 
 ### Sync Sauce ###
