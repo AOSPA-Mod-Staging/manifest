@@ -34,7 +34,7 @@
 
   <remote  name="los"
            fetch="https://github.com/LineageOS"
-           revision="lineage-23.0" />
+           revision="lineage-23.2" />
 
   <!-- Octavi -->
   <remote  name="octavi"
