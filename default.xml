@@ -38,7 +38,7 @@
 
   <!-- Octavi -->
   <remote  name="octavi"
-           fetch="https://github.com/OSS-Random"
+           fetch="https://github.com/oss51"
            revision="sixteen"/>
 
   <include name="system.xml"/>
